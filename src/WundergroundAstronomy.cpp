@@ -109,7 +109,10 @@ void WundergroundAstronomy::value(String value) {
   if (currentKey == "percentIlluminated") {
     astronomy->moonPctIlum = value;
   }
-
+  
+  if (currentKey == "hemisphere") {
+    astronomy->Hemisphere = value;
+  }
 
   if (currentParent == "sunrise") {      // Has a Parent key and 2 sub-keys
     if (currentKey == "hour") {
