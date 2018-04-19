@@ -32,6 +32,7 @@ typedef struct WGAstronomy {
   String moonPctIlum;
   String moonAge;
   String moonPhase;
+  String hemisphere;
   String sunriseTime;
   String sunsetTime;
   String moonriseTime;
@@ -46,6 +47,7 @@ class WundergroundAstronomy: public JsonListener {
     String moonPctIlum;  // not used
     String moonAge;      // make this a long?
     String moonPhase;
+    String hemisphere;
     String sunriseTime;
     String sunsetTime;
     String moonriseTime;
