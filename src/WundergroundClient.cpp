@@ -227,9 +227,12 @@ void WundergroundClient::value(String value) {
 
   if (currentKey == "phaseofMoon") {
     moonPhase = value;
+  }	
+	
+  if (currentKey == "hemisphere"){
+    hemisphere = value;
   }
-
-
+	
   if (currentParent == "sunrise") {      // Has a Parent key and 2 sub-keys
 	if (currentKey == "hour") {
 		int tempHour = value.toInt();    // do this to concert to 12 hour time (make it a function!)
@@ -616,6 +619,10 @@ String WundergroundClient::getMoonAge() {
 
 String WundergroundClient::getMoonPhase() {
   return moonPhase;
+}
+
+String WundergroundClient::getMoonHemisphere(){
+  return hemisphere;	
 }
 
 String WundergroundClient::getSunriseTime() {
