@@ -105,6 +105,10 @@ void WundergroundAstronomy::value(String value) {
   if (currentKey == "phaseofMoon") {
     astronomy->moonPhase = value;
   }
+  
+  if CurrentKey == "hemisphere"){
+    astronomy->hemisphere = value;
+  }
 
   if (currentKey == "percentIlluminated") {
     astronomy->moonPctIlum = value;
