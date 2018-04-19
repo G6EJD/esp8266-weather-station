@@ -50,6 +50,7 @@ class WundergroundClient: public JsonListener {
     String moonPctIlum;  // not used
     String moonAge;      // make this a long?
     String moonPhase;
+    String hemisphere;
     String sunriseTime;
     String sunsetTime;
     String moonriseTime;
@@ -127,6 +128,7 @@ class WundergroundClient: public JsonListener {
     String getMoonPctIlum();
     String getMoonAge();
     String getMoonPhase();
+    String getMoonHemisphere();
     String getSunriseTime();
     String getSunsetTime();
     String getMoonriseTime();
